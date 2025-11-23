@@ -1,0 +1,159 @@
+:root {
+  --black: #1d1d1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: rgb(214, 214, 214);
+    color: var(--black);
+}
+.container {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+form input:focus {
+    outline: 1px solid #a5a5a5;
+}
+
+form .main-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form .main-btn:active {
+    background-color: rgb(0, 81, 187)
+}
+
+li {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 8px 0;
+    list-style: decimal;
+    padding: 12px;
+    background: rgba(169, 163, 255, 0.2);
+    border-left: 5px solid rgba(62, 48, 255, 0.2);
+    border-right: 5px solid rgba(62, 48, 255, 0.2);
+    border-radius: 10px;
+
+}
+
+.delete-btn {
+    margin: 0 5px;
+    padding: 8px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.delete-btn:active {
+    background-color: rgb(184, 0, 0);
+}
+
+.completed-btn {
+    padding: 8px;
+    margin-left: 5px;
+    background-color: rgb(51, 255, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.completed-btn:active {
+    background-color: rgb(37, 184, 0);
+}
+
+.task-completed {
+    background: rgb(194, 255, 186);
+    border-left: 5px solid rgb(100, 255, 80);
+    border-right: 5px solid rgb(100, 255, 80);
+    padding: 12px;
+    text-decoration: line-through;
+    color: #888;
+
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 25px;
+    }
+
+    form input, form .main-btn {
+        padding: 16px;
+    }
+
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    form input, form .main-btn {
+        padding: 20px;
+    }
+
+    li {
+        gap: 10px;
+        padding: 14px;
+        margin: 15px 0;
+    }
+
+    .task-completed {
+        padding: 14px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 850px;
+    }
+
+    body {
+        font-size: 1.02em;
+    }
+}
